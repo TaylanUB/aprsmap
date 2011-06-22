@@ -266,7 +266,7 @@ static void start_aprsis_thread(void *ptr) {
 	g_message("logging in...");
 	aprsis_login(ctx);
 
-	aprsis_set_filter(ctx, 55, -4, 600);
+	aprsis_set_filter(ctx, DEF_HOME_LAT, DEF_HOME_LON, DEF_RAD);
 	//aprsis_set_filter_string(ctx, "p/M/G/2"); // callsigns beginning with G, M or 2 - UK callsigns, normally
 	//aprsis_set_filter_string(ctx, "p/HB9"); // Swiss callsigns
 

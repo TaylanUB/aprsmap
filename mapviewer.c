@@ -134,7 +134,7 @@ main (int argc, char **argv)
 	//aprsis_ctx *ctx = aprsis_new("localhost", "14580", "aprsmap", "-1");
 
 	//set variables properties->lat, properties->lon, properties->range, properties->ctx
-	aprs_details *properties = aprs_details_new(55.00,-4.00,600,ctx); 
+	aprs_details *properties = aprs_details_new(DEF_HOME_LAT,DEF_HOME_LON,DEF_RAD,ctx); 
 
 	if (packet_log_file != NULL) {
 		FILE *log = fopen(packet_log_file, "w");
